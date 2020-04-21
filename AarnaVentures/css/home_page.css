@@ -1,0 +1,749 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+html
+{
+    font-family: 'Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif'; 
+    overflow-x: hidden;
+    filter: grayscale(50%);
+}
+.small_logo
+{
+    height: 12vh;
+    width: auto;
+    background-color: #000;
+}
+.logo_img
+{
+    background: url("../images/logo_small.png");
+    background: contain;
+    background-position: 2vw 1.5vh;
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    height: 12vh;
+    width: auto;
+    -webkit-animation: flicker 2s linear infinite both;
+}
+@keyframes flicker {
+    0%, 100%  { opacity: 1;  }
+    41.99%  { opacity: 1;  }
+    42% { opacity: 0; }
+    43% { opacity: 0; }
+    43.01% {  opacity: 1; }
+    47.99% { opacity: 1;  }
+    48% { opacity: 0; }
+    49% { opacity: 0; }
+    49.01% { opacity: 1; }
+  }
+.logo_n_links
+{
+    height: 11vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 10px 20px -10px #fff;
+    z-index: 10;
+} 
+.links,.soc_media
+{
+    float: right;
+    margin: 2vh 2.5vw;
+  }
+.links ul li,.soc_media ul li
+{
+    float: left;
+    /* display: relative ; */
+    margin-right: 1.7vw;
+    list-style: none;
+    text-align: center;
+}
+.links ul li a{
+    text-decoration: none;
+}
+.icon > img, .soc_icon>img
+{
+    height: 4.5vh;
+    width: auto;
+}
+.parallax_img_home
+{
+    background: url("../images/parallax_home.jpg");
+    min-height: 120%;
+}
+.parallax_img_about
+{
+    background: url("../images/parallax_about.jpg");
+    min-height: 60%;
+}
+.parallax_img_service_home
+{
+    background: url("../images/parallax_services_home.jpeg");
+    min-height: 60%;
+    background-position:0 100%;
+}
+.parallax_img_archi
+{
+background: url("../images/architectural_planning_n_design.jpg");
+min-height: 60%;
+}
+.parallax_img_structural
+{
+    background: url("../images/parallax_structural.jpg");
+    min-height: 60%;
+}
+.parallax_img_interior
+{
+    background: url("../images/parallax_interior.jpg");
+    min-height: 60%;
+}
+.parallax_img_reach_us_at
+{
+    background: url("../images/parallax_contact.jpg");
+    min-height: 60%;
+}
+.parallax_img_home,.parallax_img_about,.parallax_img_service_home,
+.parallax_img_archi,.parallax_img_interior,.parallax_img_structural,.parallax_img_reach_us_at
+{
+    /* position: relative; */
+    /* background-position: contain; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* z-index: 1; */
+}
+h2
+{
+    font-size: 230%;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-weight: bolder;
+    filter: drop-shadow(6px 6px 5px #000);
+}
+.parallax_img_home>h2
+{
+    font-size: 300%;
+    transform: translate(50%,300%);
+    color: #000;
+}
+.parallax_img_about > h2
+{
+    transform: translate(30%,350%);
+    color: #000;
+}
+.parallax_img_service_home > h2
+{
+    transform: translate(37%,350%);
+    color: #fff;
+}
+.parallax_img_archi > h2
+{
+   width: auto;
+    transform: translate(45%,170%);
+}
+.parallax_img_structural > h2
+{
+    color: #fff;
+    transform: translate(25%,300%);
+}
+.parallax_img_interior > h2
+{
+    transform: translate(60%,250%);
+}
+
+.home_pg { height: 75vh; }
+.about_pg >p,.service_home_pg>p,.structural >p,.interior>p { height: auto;width: 90%; }
+.home_pg,.service_home_pg,.about_pg
+{
+    background: #000;
+   width: 100%;
+    /* position: relative; */
+    /* display: block; */
+    color: #ffffff;
+    z-index: 1;
+    
+}
+.logo{
+    height: 50vh;
+    width: 30vw;
+    transform: translate(120%, 15%);
+    /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vh;
+  width: 30%; */
+}
+.logo >img
+{
+    height: 50vh;
+    width: auto;
+}
+.company_name { transform: translate(35%, 80%); 
+height:auto;}
+.name
+{
+    font-family: 'Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif'; 
+    color: rgb(211, 211, 211);
+    /* list-style: none; */
+}
+h1{
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    color:rgb(245,245,245);
+     font-size: 238%; 
+    text-transform: uppercase;
+}
+.color_change
+{
+    animation: aarnaventures 10s infinite;
+}
+@keyframes aarnaventures
+{
+     0%{color:rgb(220,220,220)}
+     12.5%{color:rgb(192,192,192)}
+     25%{color:rgb(128,128,128)}
+     37.5%{color:rgb(119, 136, 153)}
+     50%{color:rgb(105, 105, 105)}
+     62.5%{color:rgb(112, 128, 144)}
+     75%{color:rgb(47, 79, 79)}
+     87.5%{color:rgb(128,128,128)}
+     93.75%{color:rgb(220,220,220)}
+     100%{color:rgb(119, 136, 153)}
+}
+.tagline
+{
+    font-family:'Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif';
+    font-size: 125%; 
+    text-transform: initial;
+    margin-top: -3vh;
+    margin-left:10.5vw;
+    word-spacing: .2vw;
+    animation: typing 4.5s steps(22);
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .12vw;
+    font-style: oblique;
+}
+@keyframes typing{
+    0% {width: 0ch;}
+    100% { width:22ch; } 
+}
+.tagline-line
+{
+    width: 0.5vw;
+    margin-left: 10.5vw;
+    animation:hr_animation 4.5s steps(24,end) infinite;/* 24-no of steps */
+}
+@keyframes hr_animation
+{
+    0% {width: 0%}
+    50% {width:18.5%}
+    75%{width: 18.5%}
+    100%{width: 0%}
+}
+.service_home_page
+{
+    background-color: #000000;
+    height: 48vh;
+}
+.service_home_page ul li{
+    list-style: none;
+    float:left;
+    text-align: center;
+    margin: 1.4%;
+    margin-top: 6.5vh; 
+}
+.service_home_page ul li a > div
+{
+    margin-bottom: .75vh;
+}
+.service_home_page ul li img{
+    height: 30vh;
+    width: 30vw;
+}
+.service_home_page ul li a
+{
+    text-decoration: none;
+    font-size: 170%;
+    color: #ffffff;
+}
+/* .service_home_page>img
+{
+    height: 75vh;
+    width:auto;
+    float: right;
+    background-size: cover; 
+} */
+.architecture,.interior,.structural
+{
+    background: #000;
+    height: 60vh;
+    padding-bottom: 5vw;
+    line-height: 5vh;
+    width: 100%;
+}
+.structural
+{
+    height: 30vh;
+    width:100vw;
+}
+.interior
+{
+    height: 35vh;
+    padding-bottom: 3vw;
+}
+p{
+    color: #ffffff;
+    /* height: 40%; */
+     padding:3%; 
+    font-size: 170%;
+    /* width:95%; */
+    text-align: justify;
+    }
+.info
+{
+    width: 33%;
+    float: right;
+    font-size: 130%;
+    transform: translate(-25%,20%);
+    line-height: 5vh;
+    text-transform: capitalize;
+}
+ .info> a
+ {
+    color: #ffffff;
+    text-decoration: none;
+}
+.soc_media ul li{
+transform: translate(550%,1300%)
+}
+.contact
+{
+    width: 100%;
+    height: 75vh;
+    background-color: #000;
+}
+iframe
+{
+    margin: 3%;
+}
+.parallax_img_reach_us_at>h2
+{
+    transform: translate(20%,300%);
+}
+/* ----------------------------------MAC------------------------------------------------------- */
+@media (max-width: 1026px ) /* less than 0 to 1025 -works */
+{
+    .service_home_page ul li img{
+        height: 20vh;
+        width: auto;
+    }
+    .service_home_page
+{
+    background-color: #000000;
+    height: 35vh;
+}
+.parallax_img_archi >h2
+{
+    width: 50%;
+}
+p
+{
+    font-size: 130% ;
+}
+/* ----------------------------------TABLET------------------------------------------------------- */
+@media (max-width: 768px ) /* less than 0 to 768 -works */
+{
+    *{ overflow-x: hidden;}
+    .icon >img { display:none; }
+    .links
+    {
+    float: left;
+    padding:2vh 17vw; 
+    width: 100%;
+    }
+  .name
+    {
+      font-size: 200%;
+    }
+  .links ul li
+    {
+    margin-right: 4vw;
+    margin-left: 0;
+    }
+.logo_img
+    {
+    background-position: 40vw 1.5vh;
+    }
+.logo
+{
+    height: 25vh;
+    width: 40vw;
+    transform: translate(60%, 10%);
+}
+.logo >img
+{
+    height: 25vh;
+    width: auto;
+}
+.company_name { transform: translate(20%, 50%);  }
+.tagline
+{
+    font-size: 120%; 
+    transform: translate(10%,60%);
+}
+.tagline-line { display: none; }
+.architecture, .structural,.interior
+    {
+        height: auto;
+        width: 100%;
+        line-height: 3vh;
+    }
+    .architecture > p,.structural>p, .interior >p,.about_pg > p
+    {
+        height: auto;
+        padding: 3.5vh;
+        line-height: 4vh;
+    }
+    p
+    {
+        width: 90%;
+        font-size: 170%;
+    }
+     .contact
+     {
+         height: auto;
+         width:100%;
+     }
+     .contact> iframe
+     {
+         transform: translate(10%,0%);
+     }
+     iframe
+     {
+         width: 85%;
+         height: 50vh;
+         margin: 0%;
+         padding: 0%;
+         margin-top: 7%;
+     }
+     .info
+     {
+         width:100%;
+         font-size: 170%;
+         transform: translate(5%,10%);
+         line-height: 3.5vh;
+     }
+     .parallax_img_home>h2
+    {
+        transform: translate(30%,280%);
+        color: #ffffff;
+    }
+     .parallax_img_about > h2
+     {
+         transform: translate(25%,450%);
+         color: #fff;
+         font-size:300%;
+     }
+     .parallax_img_service_home > h2
+    {
+    transform: translate(30%,450%);
+    color: #fff;
+    }
+.parallax_img_archi > h2
+    {
+        width: 60vw;
+        transform: translate(30%,100%);
+    }
+.parallax_img_interior > h2
+    {
+        transform: translate(30%,300%);
+        color: #fff;
+    }
+    .parallax_img_reach_us_at>h2
+    {
+        transform: translate(30%,400%);
+        color: #000;
+    }
+    .service_home_page
+    {
+        background-color: #000000;
+        color: aliceblue;
+        height: auto;
+        padding: 5%;
+    }
+    .service_home_page ul li{
+        text-align: left;
+        margin: 1%;
+        width: 60%;
+    }
+    .service_home_page ul li a
+    {
+        text-decoration: none;
+        font-size: 170%;
+        color: #ffffff;
+    }
+    .service_home_page ul li img
+    {
+        display: none;
+    }
+    #id_divisions
+    {
+        display:none;
+    }
+    .home_pg { height: 40vh;}
+    .parallax_img_home
+    {
+        background: url("../images/parallax_home_TAB.jpg");
+        position: relative;
+        background-position: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 40%;
+    }
+    .parallax_img_about
+    {
+        background: url("../images/parallax_about_TAB.jpg");
+    }
+    .parallax_img_service_home
+    {
+        background: url("../images/parallax_services_home_tab.jpg");
+    }
+    .parallax_img_interior
+    {
+        background: url("../images/parallax_interior_TAB.jpg");
+    }
+    .parallax_img_archi
+    {
+    background: url("../images/architectural_planning_tab.jpg");
+    background-position: 50%;
+    position: relative;
+        background-position: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 40%;
+    }
+    .parallax_img_structural
+    {
+        background: url("../images/parallax_structural_tab.jpg");
+        background-position: 70%;
+    }
+    .parallax_img_reach_us_at
+    {
+        background: url("../images/parallax_contact_TAB.jpg");
+    }
+    .parallax_img_about,.parallax_img_service_home,.parallax_img_home
+    .parallax_img_archi,.parallax_img_interior,.parallax_img_structural,.parallax_img_reach_us_at
+    {
+        position: relative;
+        background-position: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 40%;
+    }
+    /* -----------------------------------------MOBILE------------------------------------------------ */
+@media(max-width: 575.98px)/* less than 0-575.98 -works */
+{
+    html
+    {
+        filter: grayscale(50%);
+    }
+    *
+    {
+        overflow-x : hidden; 
+        margin: 0;
+        padding: 0;
+    }
+    .logo_img
+    {
+        background-position: 35vw 1.5vh;
+    }
+        .logo >img
+    {
+        height: 7vh;
+        width: auto;
+    }
+    .links
+    {
+        float: left;
+    padding: 0;
+    width: 90%;
+    transform: translate(10%);
+    }
+    .links ul 
+    {
+        width: 90%;
+    }
+    .name
+    {
+        font-size: 112%;
+    }
+    .logo{
+        height: 20vh;
+        width: 50vw;
+        transform: translate(60%, 10%);
+    }
+    .logo >img
+    {
+        height: 17vh;
+        width: auto;
+    }
+    .company_name { transform: translate(20%, 20%); 
+        height: 20vh;
+    }
+    .tagline
+    {
+        font-size: 100%; 
+        transform: translate(0%,30%);
+    }
+    h1{font-size: 130%; }
+    h2{font-size: 170%;}
+    .parallax_img_home>h2
+    {
+        transform: translate(25%,250%);
+        color: #ffffff;
+        font-size: 150%;
+    }
+    .parallax_img_about > h2
+    {
+        transform: translate(20%,400%);
+        color: #000;
+        font-size: 170%;
+    }
+    .parallax_img_service_home > h2
+    {
+        transform: translate(20%,450%);
+        color: #fff;
+    }
+    .parallax_img_structural > h2
+    {
+        color: #fff;
+        transform: translate(20%,600%);
+        font-size: 130%;
+    }
+    .parallax_img_interior > h2
+    {
+        transform: translate(20%,250%);
+    }
+    .parallax_img_reach_us_at>h2
+    {
+        transform: translate(20%,400%);
+        color: #000;
+    }
+    .home_pg 
+    { 
+        height: 32vh;
+        width: 100%;
+        overflow-y: hidden;
+    }
+    .about_pg
+    {
+        height: auto;
+        width: 100%;   
+        padding: 2vh;
+    }
+    .about_pg > p,.architecture > p, .structural>p,.interior > p {
+    width: 85%;
+    height: auto;
+    padding: 3.5vh;
+    }
+    .about_pg > p{padding: 2.5vh}
+.architecture, .structural,.interior
+    {
+        height: auto;
+        width: 100%;
+        line-height: 3vh;
+    }
+    .structural,.interior
+    {
+        height: auto;
+        width: 100%;
+    }
+    p{
+        font-size: 100%;
+        text-align: justify;
+    }
+    .service_home_page ul li a
+{
+    font-size: 100%;
+}
+.contact
+     {
+         height: auto;
+         width: 100%;
+     }
+     .contact> iframe
+     {
+         transform: translate(5%,5%);
+     }
+     .info
+     {
+         width:100%;
+         font-size: 80%;
+         transform: translate(5%,10%);
+         line-height: 3vh;
+         margin: 0;
+     }
+     iframe
+     {
+         height: 30%;
+         width: 90%;
+         transform: translate(0%,0%);
+         margin: 0%;
+         padding: 0%;
+     }
+    .parallax_img_home
+    {
+        background: url("../images/parallax_home_mobile.jpg");
+        position: relative;
+        background-position: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: initial;
+        min-height: 40%;
+    }
+        .parallax_img_about
+    {
+        background: url("../images/parallax_about_mobile.jpg");
+    }
+    .parallax_img_service_home
+    {
+        background: url("../images/parallax_services_home_mobile.jpg");
+    }
+    .parallax_img_archi
+    {
+        background: url("../images/architectural_planning_mobile.jpg");
+        position: relative;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: initial;
+    }
+    .parallax_img_interior
+    {
+        background: url("../images/parallax_interior_mobile.jpg");
+    }
+    .parallax_img_structural
+    {
+        background: url("../images/parallax_structural_mobile.jpg");
+        background-position: 70%;
+    }
+    .parallax_img_reach_us_at
+    {
+        background: url("../images/parallax_contact_mobile.jpg");}
+    }
+    .parallax_img_about,.parallax_img_service_home,.parallax_img_home
+    .parallax_img_archi,.parallax_img_interior,.parallax_img_structural,.parallax_img_reach_us_at
+    {
+        /* position: relative; */
+        background-position: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: initial;
+        min-height: 40%;
+    }
+    
+}
